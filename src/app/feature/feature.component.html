@@ -1,1 +1,20 @@
-<p>feature works!</p>
+
+<div class="container">
+    <label for="displayname"><b>Display Name</b></label>
+    <input type="text"  [(ngModel)]="displayname"  required>
+
+    <label for="technicalname"><b>Technical Name</b></label>
+    <input type="text" [(ngModel)]="technicalname"  required>
+
+    <label for="expireon"><b> Expires on</b></label>
+    <input type="text" [(ngModel)]="expireon"  required>
+
+
+    <label for="description"><b>Description</b></label>
+    <input type="text" [(ngModel)]="description"  required>
+
+    <button type="button" (click)="save()"> Save </button>
+
+</div>
+
+

@@ -16,10 +16,13 @@ export class ListFeatureComponent implements OnInit {
     { displayName: 'Feature 5' ,technicalName: 'Feature Tech 5', expiresOn : '6-12-2021', description : 'test', enabled : 'yes', ApplicationIds: [1,2,3]},
     { displayName: 'Feature 6' ,technicalName: 'Feature Tech 6', expiresOn : '7-12-2021', description : 'test', enabled : 'yes', ApplicationIds: [1,2,3]},
   ];
-
+  role: boolean = false;
   constructor() { }
 
   ngOnInit(): void {
+
+    if(sessionStorage.getItem('role') == 'prodmanager')
+        this.role = true;
 
   }
 

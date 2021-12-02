@@ -1,9 +1,13 @@
+
+<div align="right"><a *ngIf="role">Create User | </a>  <a [routerLink]="[ '/add']">Create Feature</a>
+ </div>
 <table class="table">
   <thead>
   <tr>
     <th scope="col">Display Name</th>
     <th scope="col">Technical Name</th>
     <th scope="col">Expires On</th>
+    <th scope="col">Action</th>
   </tr>
   </thead>
   <tbody>
@@ -11,6 +15,7 @@
     <td>{{feature.displayName}}</td>
     <td>{{feature.technicalName}}</td>
     <td>{{feature.expiresOn}}</td>
+    <td><a [routerLink]="[ '/update/1']" >Update Feature</a></td>
   </tr>
   </tbody>
 </table>
