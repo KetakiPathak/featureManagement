@@ -1,0 +1,16 @@
+<table class="table">
+  <thead>
+  <tr>
+    <th scope="col">Display Name</th>
+    <th scope="col">Technical Name</th>
+    <th scope="col">Expires On</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let feature of features ">
+    <td>{{feature.displayName}}</td>
+    <td>{{feature.technicalName}}</td>
+    <td>{{feature.expiresOn}}</td>
+  </tr>
+  </tbody>
+</table>
